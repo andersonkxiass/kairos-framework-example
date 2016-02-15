@@ -1,0 +1,36 @@
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<fx:root xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8" type="org.kairos.core.Fragment">
+
+    <VBox AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" style="-fx-padding:16px">
+
+        <TableView fx:id="expensesList" style="-fx-background-color: white" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn text="Description" minWidth="160">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="description"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Locale" minWidth="160">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="locale"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Value" minWidth="160">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="value"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Date" minWidth="160">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </VBox>
+</fx:root>

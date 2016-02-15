@@ -1,0 +1,30 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<StackPane
+    xmlns:fx="http://javafx.com/fxml" prefHeight="52" alignment="CENTER_LEFT" styleClass="nav-item">
+
+    <Label fx:id="description">
+        <StackPane.margin>
+            <Insets left="5"/>
+        </StackPane.margin>
+    </Label>
+
+    <Label fx:id="locale">
+        <StackPane.margin>
+            <Insets left="200"/>
+        </StackPane.margin>
+    </Label>
+
+    <Label fx:id="value">
+        <StackPane.margin>
+            <Insets left="410"/>
+        </StackPane.margin>
+    </Label>
+
+    <Label fx:id="date">
+        <StackPane.margin>
+            <Insets left="600"/>
+        </StackPane.margin>
+    </Label>
+</StackPane>

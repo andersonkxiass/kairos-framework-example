@@ -1,0 +1,12 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<StackPane
+    xmlns:fx="http://javafx.com/fxml" prefHeight="48" alignment="CENTER_LEFT" styleClass="nav-item">
+
+    <Label fx:id="title">
+        <StackPane.margin>
+            <Insets left="15"/>
+        </StackPane.margin>
+    </Label>
+</StackPane>

@@ -1,0 +1,26 @@
+<?import javafx.scene.layout.*?> <!-- import all default layouts -->
+<?import org.kairos.layouts.DrawerLayout?>
+
+<?import org.kairos.Toolbar?>
+<?import org.kairos.layouts.RecyclerView?>
+
+<AnchorPane
+        xmlns:fx="http://javafx.com/fml"
+        prefWidth="800" prefHeight="900" style="-fx-background-color:#f2f3f3; -fx-padding:0px">
+
+    <DrawerLayout fx:id="drawer" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+
+        <content>
+            <VBox AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0">
+                <Toolbar fx:id="toolbar"/>
+                <StackPane VBox.vgrow="ALWAYS" id="content"></StackPane>
+            </VBox>
+        </content>
+        <nav>
+            <StackPane style="-fx-background-color: white">
+                <RecyclerView fx:id="items"/>
+            </StackPane>
+        </nav>
+    </DrawerLayout>
+
+</AnchorPane>
